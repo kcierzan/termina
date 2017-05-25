@@ -223,3 +223,67 @@ hi markdownLinkTextDelimiter ctermfg=248 ctermbg=none cterm=none
 hi markdownHeadingDelimiter  ctermfg=166 ctermbg=none cterm=none
 hi markdownUrl               ctermfg=5   ctermbg=none cterm=none
 hi markdownUrlTitleDelimiter ctermfg=2   ctermbg=none cterm=none
+
+" Javascript
+hi javaScriptBraces     ctermfg=223
+hi javaScriptFunction   ctermfg=14
+hi javaScriptIdentifier ctermfg=1
+hi javaScriptMember     ctermfg=4
+hi javaScriptNumber     ctermfg=5
+hi javaScriptNull       ctermfg=5
+hi javaScriptParens     ctermfg=248
+
+
+" Yet Another Javascript Syntax
+hi javascriptImport       ctermfg=6
+hi javascriptExport       ctermfg=6
+hi javascriptClassKeyword ctermfg=6
+hi javascriptClassExtends ctermfg=6
+hi javascriptDefault      ctermfg=6
+
+hi javascriptClassName      ctermfg=3
+hi javascriptClassSuperName ctermfg=3
+hi javascriptGlobal         ctermfg=3
+
+hi javascriptEndColons    ctermfg=223
+hi javascriptFuncArg      ctermfg=223
+hi javascriptGlobalMethod ctermfg=223
+hi javascriptNodeGlobal   ctermfg=223
+
+" hi javascriptVariable GruvboxOrange
+" hi javascriptIdentifier GruvboxOrange
+" hi javascriptClassSuper GruvboxOrange
+hi javascriptIdentifier ctermfg=166
+hi javascriptClassSuper ctermfg=166
+hi javascriptVariable   ctermfg=1
+
+" hi! link javascriptFuncKeyword GruvboxOrange
+" hi! link javascriptAsyncFunc GruvboxOrange
+hi javascriptFuncKeyword ctermfg=6
+hi javascriptAsyncFunc   ctermfg=6
+hi javascriptClassStatic ctermfg=166
+
+hi javascriptOperator    ctermfg=1
+hi javascriptForOperator ctermfg=1
+hi javascriptYield       ctermfg=1
+hi javascriptExceptions  ctermfg=1
+hi javascriptMessage     ctermfg=1
+
+hi javascriptTemplateSB ctermfg=6
+hi javascriptTemplateSubstitution ctermfg=223
+
+" hi! link javascriptLabel GruvboxBlue
+" hi! link javascriptObjectLabel GruvboxBlue
+" hi! link javascriptPropertyName GruvboxBlue
+hi javascriptLabel        ctermfg=223
+hi javascriptObjectLabel  ctermfg=223
+hi javascriptPropertyName ctermfg=223
+
+hi javascriptLogicSymbols ctermfg=223
+hi javascriptArrowFunc    ctermfg=223
+
+hi javascriptDocParamName      ctermfg=246
+hi javascriptDocTags           ctermfg=246
+hi javascriptDocNotation       ctermfg=246
+hi javascriptDocParamType      ctermfg=246
+hi javascriptDocNamedParamType ctermfg=246
