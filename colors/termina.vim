@@ -226,7 +226,7 @@ hi markdownUrlTitleDelimiter ctermfg=2   ctermbg=none cterm=none
 
 " Javascript
 hi javaScriptBraces     ctermfg=223
-hi javaScriptFunction   ctermfg=14
+hi javaScriptFunction   ctermfg=6
 hi javaScriptIdentifier ctermfg=1
 hi javaScriptMember     ctermfg=4
 hi javaScriptNumber     ctermfg=5
@@ -250,15 +250,15 @@ hi javascriptFuncArg      ctermfg=223
 hi javascriptGlobalMethod ctermfg=223
 hi javascriptNodeGlobal   ctermfg=223
 
-" hi javascriptVariable GruvboxOrange
-" hi javascriptIdentifier GruvboxOrange
-" hi javascriptClassSuper GruvboxOrange
+hi javascriptVariable   ctermfg=166
+hi javascriptIdentifier ctermfg=166
+hi javascriptClassSuper ctermfg=166
 hi javascriptIdentifier ctermfg=166
 hi javascriptClassSuper ctermfg=166
 hi javascriptVariable   ctermfg=1
 
-" hi! link javascriptFuncKeyword GruvboxOrange
-" hi! link javascriptAsyncFunc GruvboxOrange
+hi javascriptFuncKeyword ctermfg=166
+hi javascriptAsyncFunc   ctermfg=166
 hi javascriptFuncKeyword ctermfg=6
 hi javascriptAsyncFunc   ctermfg=6
 hi javascriptClassStatic ctermfg=166
@@ -272,9 +272,9 @@ hi javascriptMessage     ctermfg=1
 hi javascriptTemplateSB ctermfg=6
 hi javascriptTemplateSubstitution ctermfg=223
 
-" hi! link javascriptLabel GruvboxBlue
-" hi! link javascriptObjectLabel GruvboxBlue
-" hi! link javascriptPropertyName GruvboxBlue
+hi javascriptLabel        ctermfg=4
+hi javascriptObjectLabel  ctermfg=4
+hi javascriptPropertyName ctermfg=4
 hi javascriptLabel        ctermfg=223
 hi javascriptObjectLabel  ctermfg=223
 hi javascriptPropertyName ctermfg=223
