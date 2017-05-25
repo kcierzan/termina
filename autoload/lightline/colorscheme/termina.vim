@@ -78,7 +78,7 @@ let s:p.inactive.middle    = [ [ s:base0, s:black ] ]
 let s:p.tabline.left       = [ [ s:base3, s:base01 ] ]
 let s:p.tabline.tabsel     = [ [ s:black, s:blue ] ]
 " let s:p.tabline.middle     = [ [ s:base01, s:black ] ]
-let s:p.tabline.right      = [ [ s:base3, s:base01 ] ]
+let s:p.tabline.right      = [ [ s:black, s:blue ] ]
 let s:p.normal.error       = [ [ s:black, s:red ] ]
 let s:p.normal.warning     = [ [ s:base02, s:yellow ] ]
 
