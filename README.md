@@ -18,7 +18,8 @@ Plug 'kcierzan/termina'
 colorscheme termina
 ```
 
-(For lightline useres)
+(For lightline users)
+
 3. Set the lightline theme:
 
 ```vim
@@ -29,6 +30,7 @@ let g:lightline = { 'colorscheme': 'termina' }
 
 * Tab completion
 * Easymotion
+* Lightline
 * GitGutter
 * Startify
 * BufTabLine
@@ -36,6 +38,5 @@ let g:lightline = { 'colorscheme': 'termina' }
 * JSON
 * Vimscript
 * Markdown
+* Yet Another Javascript Syntax
 
-### TODO:
-* Add support for Javascript
