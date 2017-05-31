@@ -61,7 +61,7 @@ endif
 set fillchars=vert:\│
 
 " GUI
-hi CursorLine            ctermfg=none ctermbg=237  cterm=none
+hi CursorLine            ctermfg=none ctermbg=none  cterm=underline
 hi CursorColumn          ctermfg=none ctermbg=237  cterm=none
 hi  TabLineFill          ctermfg=243  ctermbg=0    cterm=none
 hi  TabLine              ctermfg=243  ctermbg=0    cterm=none
@@ -69,7 +69,7 @@ hi  TabLineSel           ctermfg=0    ctermbg=4    cterm=inverse,bold
 hi  MatchParen           ctermfg=none ctermbg=241  cterm=bold
 hi  ColorColumn          ctermfg=none ctermbg=237  cterm=none
 hi  Conceal              ctermfg=4    ctermbg=none cterm=none
-hi  CursorLineNr         ctermfg=11   ctermbg=237  cterm=none
+hi  CursorLineNr         ctermfg=11   ctermbg=none  cterm=underline
 hi  Visual               ctermfg=none ctermbg=241  cterm=inverse
 hi  VisualNOS            ctermfg=none ctermbg=241  cterm=inverse
 hi  Search               ctermfg=11   ctermbg=235  cterm=inverse
@@ -287,3 +287,10 @@ hi javascriptDocTags           ctermfg=246
 hi javascriptDocNotation       ctermfg=246
 hi javascriptDocParamType      ctermfg=246
 hi javascriptDocNamedParamType ctermfg=246
+
+" ALE
+hi ALEErrorSign   ctermfg=1
+hi ALEWarningSign ctermfg=3
+
+" CleverF
+hi CleverFDefaultLabel ctermfg=196 cterm=bold
