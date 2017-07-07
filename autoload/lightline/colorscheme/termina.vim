@@ -5,7 +5,7 @@
 " =============================================================================
 " fg = 15
 " bg = 0
-
+"
 " dark0_hard  =  234
 " dark0       =  235
 " dark0_soft  =  236
@@ -42,15 +42,15 @@
 " neutral_purple = 5
 " neutral_aqua   = 6
 " neutral_orange = 166"}}}
-let s:base03  = [ '#808080', 241 ]
-let s:base02  = [ '#000000', 239 ]
-let s:black   = ['#000000', 0]
-let s:base01  = [ '#00ff00', 237 ]
-let s:base00  = [ '#ffff00', 235 ]
-let s:base0   = [ '#0000ff', 229 ]
-let s:base1   = [ '#00ffff', 223 ]
-let s:base2   = [ '#c0c0c0', 250 ]
-let s:base3   = [ '#ffffff', 248 ]
+let s:dark3   = [ '#808080', 241 ]
+let s:dark2   = [ '#000000', 239 ]
+let s:black   = [ '#000000', 0 ]
+let s:dark1   = [ '#00ff00', 237 ]
+let s:dark0   = [ '#ffff00', 235 ]
+let s:light0  = [ '#0000ff', 229 ]
+let s:light1  = [ '#00ffff', 223 ]
+let s:light2  = [ '#c0c0c0', 250 ]
+let s:light3  = [ '#ffffff', 248 ]
 let s:yellow  = [ '#808000', 3 ]
 let s:orange  = [ '#ff0000', 9 ]
 let s:red     = [ '#800000', 1 ]
@@ -60,26 +60,28 @@ let s:blue    = [ '#000080', 4 ]
 let s:cyan    = [ '#008080', 6 ]
 let s:green   = [ '#008000', 2 ]
 if &background ==# 'light'
-  let [s:base03, s:base3] = [s:base3, s:base03]
-  let [s:base02, s:base2] = [s:base2, s:base02]
-  let [s:base01, s:base1] = [s:base1, s:base01]
-  let [s:base00, s:base0] = [s:base0, s:base00]
+  let [s:dark3, s:light3] = [s:light3, s:dark3]
+  let [s:dark2, s:light2] = [s:light2, s:dark2]
+  let [s:dark1, s:light1] = [s:light1, s:dark1]
+  let [s:dark0, s:light0] = [s:light0, s:dark0]
 endif
+
 let s:p                    = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
-let s:p.normal.left        = [ [ s:black, s:blue ], [ s:base3, s:base01 ] ]
-let s:p.normal.right       = [ [ s:base3, s:base01 ], [ s:base3, s:base01 ] ]
-let s:p.inactive.right     = [ [ s:base02, s:base01 ], [ s:base3, s:base01 ] ]
-let s:p.inactive.left      = [ [ s:black, s:base02 ], [ s:base00, s:base02 ] ]
-let s:p.insert.left        = [ [ s:black, s:green ], [ s:base3, s:base01 ] ]
-let s:p.replace.left       = [ [ s:black, s:red ], [ s:base3, s:base01 ] ]
-let s:p.visual.left        = [ [ s:black, s:magenta ], [ s:base3, s:base01 ] ]
-let s:p.normal.middle      = [ [ s:base1, s:black ] ]
-let s:p.inactive.middle    = [ [ s:base0, s:black ] ]
-let s:p.tabline.left       = [ [ s:base3, s:base01 ] ]
+let s:p.normal.left        = [ [ s:black, s:blue ], [ s:black, s:magenta ], [ s:black, s:red ], [ s:blue, s:black ] ]
+let s:p.insert.left        = [ [ s:black, s:green ], [ s:black, s:blue ], [ s:black, s:red ], [ s:green, s:black ] ]
+let s:p.visual.left        = [ [ s:black, s:magenta ], [ s:black, s:blue ], [ s:black, s:red ], [ s:magenta, s:black ] ]
+let s:p.replace.left        = [ [ s:black, s:red ], [ s:black, s:blue ], [ s:black, s:red ], [ s:magenta, s:red ] ]
+let s:p.inactive.left        = [ [ s:blue, s:black ], [ s:magenta, s:black ], [ s:red, s:black ], [ s:black, s:blue ] ]
+
+let s:p.normal.right       = [ [ s:black, s:blue ], [ s:black, s:magenta ] ]
+let s:p.inactive.right     = [ [ s:blue, s:black ], [ s:magenta, s:black ] ]
+
+let s:p.normal.middle      = [ [ s:light1, s:black ] ]
+let s:p.inactive.middle    = [ [ s:light0, s:black ] ]
+let s:p.tabline.left       = [ [ s:magenta, s:black ] ]
 let s:p.tabline.tabsel     = [ [ s:black, s:blue ] ]
-" let s:p.tabline.middle     = [ [ s:base01, s:black ] ]
 let s:p.tabline.right      = [ [ s:black, s:blue ] ]
 let s:p.normal.error       = [ [ s:black, s:red ] ]
-let s:p.normal.warning     = [ [ s:base02, s:yellow ] ]
+let s:p.normal.warning     = [ [ s:black, s:yellow ] ]
 
 let g:lightline#colorscheme#termina#palette = lightline#colorscheme#flatten(s:p)
