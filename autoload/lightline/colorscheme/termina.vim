@@ -74,20 +74,20 @@ if &background ==# 'light'
 endif
 
 let s:p                    = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
-let s:p.normal.left        = [ [ s:black, s:blue ], [ s:white, s:dark_cyan ], [ s:black, s:red ], [ s:blue, s:black ] ]
-let s:p.insert.left        = [ [ s:black, s:green ], [ s:white, s:dark_green ], [ s:black, s:red ], [ s:green, s:black ] ]
-let s:p.visual.left        = [ [ s:black, s:magenta ], [ s:white, s:violet ], [ s:black, s:red ], [ s:magenta, s:black ] ]
-let s:p.replace.left        = [ [ s:black, s:red ], [ s:white, s:orange ], [ s:black, s:red ], [ s:magenta, s:red ] ]
-let s:p.inactive.left        = [ [ s:blue, s:black ], [ s:magenta, s:black ], [ s:red, s:black ], [ s:black, s:blue ] ]
+let s:p.normal.left        = [ [ s:black, s:blue ], [ s:black, s:dark_cyan ], [ s:black, s:red ], [ s:blue, s:black ] ]
+let s:p.insert.left        = [ [ s:black, s:green ], [ s:black, s:dark_green ], [ s:black, s:red ], [ s:green, s:black ] ]
+let s:p.visual.left        = [ [ s:black, s:magenta ], [ s:black, s:violet ], [ s:black, s:red ], [ s:magenta, s:black ] ]
+let s:p.replace.left        = [ [ s:black, s:red ], [ s:black, s:orange ], [ s:black, s:red ], [ s:magenta, s:red ] ]
+let s:p.inactive.left        = [ [ s:blue, s:dark1 ], [ s:magenta, s:dark1 ], [ s:red, s:dark1 ], [ s:black, s:dark1 ] ]
 
-let s:p.normal.right       = [ [ s:black, s:blue ], [ s:white, s:dark_cyan ] ]
-let s:p.insert.right       = [ [ s:black, s:green ], [ s:white, s:dark_green ] ]
-let s:p.visual.right       = [ [ s:black, s:magenta ], [ s:white, s:violet ] ]
-let s:p.replace.right       = [ [ s:black, s:red ], [ s:white, s:orange ] ]
+let s:p.normal.right       = [ [ s:black, s:blue ], [ s:black, s:dark_cyan ] ]
+let s:p.insert.right       = [ [ s:black, s:green ], [ s:black, s:dark_green ] ]
+let s:p.visual.right       = [ [ s:black, s:magenta ], [ s:black, s:violet ] ]
+let s:p.replace.right       = [ [ s:black, s:red ], [ s:black, s:orange ] ]
 let s:p.inactive.right     = [ [ s:blue, s:black ], [ s:magenta, s:black ] ]
 
 let s:p.normal.middle      = [ [ s:light1, s:black ] ]
-let s:p.inactive.middle    = [ [ s:light0, s:black ] ]
+let s:p.inactive.middle    = [ [ s:light0, s:dark3 ] ]
 let s:p.tabline.left       = [ [ s:magenta, s:black ] ]
 let s:p.tabline.tabsel     = [ [ s:black, s:blue ] ]
 let s:p.tabline.right      = [ [ s:black, s:blue ] ]
