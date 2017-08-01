@@ -63,7 +63,7 @@ hi CursorColumn                   ctermfg=none ctermbg=237
 hi  TabLineFill                   ctermfg=243  ctermbg=0
 hi  TabLine                       ctermfg=243  ctermbg=0
 hi  TabLineSel                    ctermfg=0    ctermbg=4    cterm=inverse,bold
-hi  MatchParen                    ctermfg=none ctermbg=241  cterm=bold
+hi  MatchParen                    ctermfg=none ctermbg=241  cterm=underline
 hi  ColorColumn                   ctermfg=none ctermbg=235
 hi  Conceal                       ctermfg=4    ctermbg=none
 hi  CursorLineNr                  ctermfg=11   ctermbg=none cterm=underline
@@ -79,11 +79,11 @@ hi  WildMenu                      ctermfg=4    ctermbg=239  cterm=bold
 hi  ErrorMsg                      ctermfg=235  ctermbg=1    cterm=bold
 hi  NonText                       ctermfg=239  ctermbg=none
 hi  SpecialKey                    ctermfg=239  ctermbg=none
-hi  Directory                     ctermfg=2    ctermbg=none cterm=bold
+hi  Directory                     ctermfg=4    ctermbg=none cterm=bold
 hi  Title                         ctermfg=2    ctermbg=none cterm=bold
 hi  MoreMsg                       ctermfg=3    ctermbg=none cterm=bold
 hi  ModeMsg                       ctermfg=3    ctermbg=none cterm=bold
-hi  Question                      ctermfg=166  ctermbg=none cterm=bold
+hi  Question                      ctermfg=5  ctermbg=none cterm=bold
 hi  WarningMsg                    ctermfg=166  ctermbg=none cterm=bold
 hi  LineNr                        ctermfg=243  ctermbg=none
 hi  SignColumn                    ctermfg=none ctermbg=237
@@ -223,11 +223,11 @@ hi markdownUrlTitleDelimiter      ctermfg=2   ctermbg=none
 
 " Javascript
 hi javaScriptBraces               ctermfg=223
-hi javaScriptFunction             ctermfg=6
-hi javaScriptIdentifier           ctermfg=1
+hi javaScriptFunction             ctermfg=5
+hi javaScriptIdentifier           ctermfg=5
 hi javaScriptMember               ctermfg=4
-hi javaScriptNumber               ctermfg=5
-hi javaScriptNull                 ctermfg=5
+hi javaScriptNumber               ctermfg=11
+hi javaScriptNull                 ctermfg=11
 hi javaScriptParens               ctermfg=248
 
 
@@ -235,7 +235,7 @@ hi javaScriptParens               ctermfg=248
 hi javascriptImport               ctermfg=6
 hi javascriptExport               ctermfg=6
 hi javascriptClassKeyword         ctermfg=6
-hi javascriptClassExtends         ctermfg=6
+hi javascriptClassExtends         ctermfg=5
 hi javascriptDefault              ctermfg=6
 
 hi javascriptClassName            ctermfg=3
@@ -266,7 +266,7 @@ hi javascriptYield                ctermfg=1
 hi javascriptExceptions           ctermfg=1
 hi javascriptMessage              ctermfg=1
 
-hi javascriptTemplateSB           ctermfg=6
+hi javascriptTemplateSB           ctermfg=9
 hi javascriptTemplateSubstitution ctermfg=223
 
 hi javascriptLabel                ctermfg=4
@@ -275,15 +275,52 @@ hi javascriptPropertyName         ctermfg=4
 hi javascriptLabel                ctermfg=223
 hi javascriptObjectLabel          ctermfg=223
 hi javascriptPropertyName         ctermfg=223
+hi javaScriptRequire              ctermfg=6
 
 hi javascriptLogicSymbols         ctermfg=223
-hi javascriptArrowFunc            ctermfg=223
+hi javascriptArrowFunc            ctermfg=5
 
-hi javascriptDocParamName         ctermfg=246
+hi javascriptDocParamName         ctermfg=2
 hi javascriptDocTags              ctermfg=246
-hi javascriptDocNotation          ctermfg=246
+hi javascriptDocNotation          ctermfg=5
 hi javascriptDocParamType         ctermfg=246
 hi javascriptDocNamedParamType    ctermfg=246
+
+hi jsArrowFunction ctermfg=5
+hi jsClassKeyword ctermfg=5
+hi jsClassMethodType ctermfg=5
+hi jsDocParam ctermfg=4
+hi jsDocTags ctermfg=5
+hi jsExport ctermfg=5
+hi jsExportDefault ctermfg=5
+hi jsExtendsKeyword ctermfg=5
+hi jsFrom ctermfg=5
+hi jsFuncCall ctermfg=4
+hi jsFunction ctermfg=5
+hi jsGenerator ctermfg=3
+hi jsGlobalObjects ctermfg=3
+hi jsImport ctermfg=5
+hi jsModuleAs ctermfg=5
+hi jsModuleWords ctermfg=5
+hi jsModules ctermfg=5
+hi jsNull ctermfg=11
+hi jsOperator ctermfg=5
+hi jsStorageClass ctermfg=5
+hi jsSuper ctermfg=1
+hi jsTemplateBraces ctermfg=9
+hi jsTemplateVar ctermfg=2
+hi jsThis ctermfg=1
+hi jsUndefined ctermfg=11
+
+hi htmlTitle          ctermfg=223
+hi htmlArg            ctermfg=11
+hi htmlEndTag         ctermfg=223
+hi htmlH1             ctermfg=223
+hi htmlLink           ctermfg=5
+hi htmlSpecialChar    ctermfg=11
+hi htmlSpecialTagName ctermfg=1
+hi htmlTag            ctermfg=223
+hi htmlTagName        ctermfg=1
 
 " ALE
 hi ALEErrorSign                   ctermfg=1
