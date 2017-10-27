@@ -9,7 +9,6 @@
 set background=dark
 let g:colors_name="termina"
 syntax reset
-
 " Palette"{{{
 " bg          = 0
 " fg          = 15
@@ -60,11 +59,11 @@ set fillchars=vert:\│
 " GUI
 hi CursorLine                     ctermfg=none ctermbg=none  cterm=underline
 hi CursorColumn                   ctermfg=none ctermbg=237
-hi  TabLineFill                   ctermfg=243  ctermbg=0
-hi  TabLine                       ctermfg=243  ctermbg=0
+hi  TabLineFill                   ctermfg=236  ctermbg=0
+hi  TabLine                       ctermfg=236  ctermbg=4
 hi  TabLineSel                    ctermfg=0    ctermbg=4    cterm=inverse,bold
 hi  MatchParen                    ctermfg=none ctermbg=241  cterm=underline
-hi  ColorColumn                   ctermfg=none ctermbg=235
+hi  ColorColumn                   ctermfg=none ctermbg=237
 hi  Conceal                       ctermfg=4    ctermbg=none
 hi  CursorLineNr                  ctermfg=11   ctermbg=none cterm=underline
 hi  Visual                        ctermfg=235  ctermbg=11
@@ -98,17 +97,17 @@ hi  lCursor                       ctermfg=none ctermbg=none cterm=inverse
 hi Special                        ctermfg=244  ctermbg=none cterm=bold
 hi Comment                        ctermfg=244  ctermbg=none
 hi Todo                           ctermfg=15   ctermbg=0
-hi Error                          ctermfg=1    ctermbg=0    cterm=bold,inverse
-hi Statement                      ctermfg=1    ctermbg=none cterm=bold
-hi Conditional                    ctermfg=1    ctermbg=none
-hi Repeat                         ctermfg=1    ctermbg=none
-hi Label                          ctermfg=1    ctermbg=none
-hi Exception                      ctermfg=1    ctermbg=none
-hi Keyword                        ctermfg=1    ctermbg=none
+hi Error                          ctermfg=235  ctermbg=1    cterm=reverse
+hi Statement                      ctermfg=4    ctermbg=none cterm=bold
+hi Conditional                    ctermfg=5    ctermbg=none
+hi Repeat                         ctermfg=5    ctermbg=none
+hi Label                          ctermfg=4    ctermbg=none
+hi Exception                      ctermfg=4    ctermbg=none
+hi Keyword                        ctermfg=5    ctermbg=none
 hi Normal                         ctermfg=none ctermbg=none
 hi Operator                       ctermfg=none ctermbg=none
 hi Identifier                     ctermfg=4    ctermbg=none
-hi Function                       ctermfg=2    ctermbg=none cterm=bold
+hi Function                       ctermfg=3    ctermbg=none cterm=bold
 hi PreProc                        ctermfg=6    ctermbg=none
 hi Include                        ctermfg=6    ctermbg=none
 hi Define                         ctermfg=6    ctermbg=none
@@ -117,7 +116,7 @@ hi PreCondit                      ctermfg=6    ctermbg=none
 hi Constant                       ctermfg=5    ctermbg=none
 hi Character                      ctermfg=5    ctermbg=none
 hi Boolean                        ctermfg=5    ctermbg=none
-hi Number                         ctermfg=5    ctermbg=none
+hi Number                         ctermfg=3      ctermbg=none
 hi Float                          ctermfg=5    ctermbg=none
 hi String                         ctermfg=2    ctermbg=none
 hi Type                           ctermfg=3    ctermbg=none
@@ -126,10 +125,10 @@ hi Structure                      ctermfg=6    ctermbg=none
 hi Typedef                        ctermfg=3    ctermbg=none
 
 " Completion Menu
-hi Pmenu                          ctermfg=223  ctermbg=239
-hi PmenuSel                       ctermfg=239  ctermbg=4   cterm=bold
+hi Pmenu                          ctermfg=7  ctermbg=0
+hi PmenuSel                       ctermfg=0  ctermbg=4   cterm=bold
 hi PmenuSbar                      ctermfg=none ctermbg=239
-hi PmenuThumb                     ctermfg=none ctermbg=243
+hi PmenuThumb                     ctermfg=7 ctermbg=243
 
 
 hi DiffDelete                     ctermfg=1   ctermbg=235  cterm=inverse
@@ -161,24 +160,24 @@ hi StartifyFooter                 ctermfg=239 ctermbg=none
 
 " BufTabLine
 hi BufTabLineCurrent              ctermfg=235 ctermbg=4
-hi BufTabLineActive               ctermfg=246 ctermbg=239
-hi BufTabLineHidden               ctermfg=243 ctermbg=237
+hi BufTabLineActive               ctermfg=4 ctermbg=none
+hi BufTabLineHidden               ctermfg=4 ctermbg=none
 hi BufTabLineFill                 ctermfg=235 ctermbg=none
 
 " Python
-hi pythonBuiltin                  ctermfg=166 ctermbg=none
-hi pythonBuiltinObj               ctermfg=166 ctermbg=none
-hi pythonBuiltinFunc              ctermfg=166 ctermbg=none
-hi pythonFunction                 ctermfg=6   ctermbg=none
+hi pythonBuiltin                  ctermfg=3 ctermbg=none
+hi pythonBuiltinObj               ctermfg=11 ctermbg=none
+hi pythonBuiltinFunc              ctermfg=3   ctermbg=none
+hi pythonFunction                 ctermfg=5   ctermbg=none
 hi pythonDecorator                ctermfg=1   ctermbg=none
 hi pythonInclude                  ctermfg=4   ctermbg=none
 hi pythonImport                   ctermfg=4   ctermbg=none
 hi pythonRun                      ctermfg=4   ctermbg=none
 hi pythonCoding                   ctermfg=4   ctermbg=none
-hi pythonOperator                 ctermfg=1   ctermbg=none
-hi pythonExceptions               ctermfg=5   ctermbg=none
+hi pythonOperator                 ctermfg=4   ctermbg=none
+hi pythonExceptions               ctermfg=1   ctermbg=none
 hi pythonBoolean                  ctermfg=5   ctermbg=none
-hi pythonDot                      ctermfg=248 ctermbg=none
+hi pythonDot                      ctermfg=5 ctermbg=none
 
 " JSON
 hi jsonKeyword                    ctermfg=2   ctermbg=none
@@ -188,9 +187,9 @@ hi jsonString                     ctermfg=223 ctermbg=none
 
 " Vimscript
 hi vimCommentTitle                ctermfg=243 ctermbg=none cterm=bold
-hi vimNotation                    ctermfg=166 ctermbg=none
-hi vimBracket                     ctermfg=166 ctermbg=none
-hi vimMapModKey                   ctermfg=166 ctermbg=none
+hi vimNotation                    ctermfg=1 ctermbg=none
+hi vimBracket                     ctermfg=1 ctermbg=none
+hi vimMapModKey                   ctermfg=1 ctermbg=none
 hi vimFuncSID                     ctermfg=248 ctermbg=none
 hi vimSetSep                      ctermfg=248 ctermbg=none
 hi vimSep                         ctermfg=248 ctermbg=none
@@ -222,13 +221,13 @@ hi markdownUrl                    ctermfg=5   ctermbg=none
 hi markdownUrlTitleDelimiter      ctermfg=2   ctermbg=none
 
 " Javascript
-hi javaScriptBraces               ctermfg=223
-hi javaScriptFunction             ctermfg=5
-hi javaScriptIdentifier           ctermfg=5
+hi javaScriptBraces               ctermfg=5 
+hi javaScriptFunction             ctermfg=13
+hi javaScriptIdentifier           ctermfg=13
 hi javaScriptMember               ctermfg=4
-hi javaScriptNumber               ctermfg=11
+hi javaScriptNumber               ctermfg=13
 hi javaScriptNull                 ctermfg=11
-hi javaScriptParens               ctermfg=248
+hi javaScriptParens               ctermfg=2
 
 
 " Yet Another Javascript Syntax
@@ -243,25 +242,21 @@ hi javascriptClassSuperName       ctermfg=3
 hi javascriptGlobal               ctermfg=3
 
 hi javascriptEndColons            ctermfg=223
-hi javascriptFuncArg              ctermfg=223
-hi javascriptGlobalMethod         ctermfg=223
-hi javascriptNodeGlobal           ctermfg=223
+hi javascriptFuncArg              ctermfg=13
+hi javascriptGlobalMethod         ctermfg=13
+hi javascriptNodeGlobal           ctermfg=2
 
-hi javascriptVariable             ctermfg=166
-hi javascriptIdentifier           ctermfg=166
-hi javascriptClassSuper           ctermfg=166
-hi javascriptIdentifier           ctermfg=166
-hi javascriptClassSuper           ctermfg=166
-hi javascriptVariable             ctermfg=1
+hi javascriptVariable             ctermfg=4
+hi javascriptIdentifier           ctermfg=5
+hi javascriptClassSuper           ctermfg=6
+hi javascriptVariable             ctermfg=4
 
-hi javascriptFuncKeyword          ctermfg=166
-hi javascriptAsyncFunc            ctermfg=166
-hi javascriptFuncKeyword          ctermfg=6
+hi javascriptFuncKeyword          ctermfg=4
 hi javascriptAsyncFunc            ctermfg=6
 hi javascriptClassStatic          ctermfg=166
 
 hi javascriptOperator             ctermfg=1
-hi javascriptForOperator          ctermfg=1
+hi javascriptForOperator          ctermfg=4
 hi javascriptYield                ctermfg=1
 hi javascriptExceptions           ctermfg=1
 hi javascriptMessage              ctermfg=1
@@ -272,13 +267,13 @@ hi javascriptTemplateSubstitution ctermfg=223
 hi javascriptLabel                ctermfg=4
 hi javascriptObjectLabel          ctermfg=4
 hi javascriptPropertyName         ctermfg=4
-hi javascriptLabel                ctermfg=223
-hi javascriptObjectLabel          ctermfg=223
-hi javascriptPropertyName         ctermfg=223
+hi javascriptLabel                ctermfg=13
+hi javascriptObjectLabel          ctermfg=13
+hi javascriptPropertyName         ctermfg=13
 hi javaScriptRequire              ctermfg=6
 
-hi javascriptLogicSymbols         ctermfg=223
-hi javascriptArrowFunc            ctermfg=5
+hi javascriptLogicSymbols         ctermfg=1
+hi javascriptArrowFunc            ctermfg=2
 
 hi javascriptDocParamName         ctermfg=2
 hi javascriptDocTags              ctermfg=246
@@ -325,6 +320,7 @@ hi htmlTagName        ctermfg=1
 " ALE
 hi ALEErrorSign                   ctermfg=1
 hi ALEWarningSign                 ctermfg=3
+hi ALEError                       ctermfg=0 ctermbg=1
 
 " CleverF
 hi CleverFDefaultLabel            ctermfg=196 cterm=bold
