@@ -63,7 +63,7 @@ hi  TabLineFill                   ctermfg=236  ctermbg=0
 hi  TabLine                       ctermfg=236  ctermbg=4
 hi  TabLineSel                    ctermfg=0    ctermbg=4    cterm=inverse,bold
 hi  MatchParen                    ctermfg=none ctermbg=241  cterm=underline
-hi  ColorColumn                   ctermfg=none ctermbg=237
+hi  ColorColumn                   ctermfg=none ctermbg=0
 hi  Conceal                       ctermfg=4    ctermbg=none
 hi  CursorLineNr                  ctermfg=11   ctermbg=none cterm=underline
 hi  Visual                        ctermfg=235  ctermbg=11
@@ -125,8 +125,8 @@ hi Structure                      ctermfg=6    ctermbg=none
 hi Typedef                        ctermfg=3    ctermbg=none
 
 " Completion Menu
-hi Pmenu                          ctermfg=7  ctermbg=0
-hi PmenuSel                       ctermfg=0  ctermbg=4   cterm=bold
+hi Pmenu                          ctermfg=5  ctermbg=0
+hi PmenuSel                       ctermfg=0  ctermbg=5   cterm=bold
 hi PmenuSbar                      ctermfg=none ctermbg=239
 hi PmenuThumb                     ctermfg=7 ctermbg=243
 
