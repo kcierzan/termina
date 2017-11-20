@@ -85,7 +85,7 @@ let s:p.normal.right    = [ [ s:black, s:blue ], [ s:black, s:magenta ] ]
 let s:p.insert.right    = [ [ s:black, s:blue ], [ s:black, s:magenta ] ]
 let s:p.visual.right    = [ [ s:black, s:blue ], [ s:black, s:magenta ] ]
 let s:p.replace.right   = [ [ s:black, s:blue ], [ s:black, s:magenta ] ]
-let s:p.inactive.right  = [ [ s:blue, s:black ], [ s:magenta, s:black ] ]
+let s:p.inactive.right  = [ [ s:blue, s:dark1 ], [ s:magenta, s:dark1 ] ]
 
 let s:p.normal.middle   = [ [ s:light1, s:black ] ]
 let s:p.inactive.middle = [ [ s:light0, s:black ] ]
