@@ -6,33 +6,28 @@
 " Last Modified: 09 May 2017
 " -----------------------------------------------------------------------------
 
-set background=dark
-let g:colors_name="termina"
-syntax reset
-" Palette"{{{
-" bg          = 0
-" fg          = 15
+" bg             = 0
+" fg             = 15
 
-" dark0_hard  =  234
-" dark0       =  235
-" dark0_soft  =  236
-" dark1       =  237
-" dark2       =  239
-" dark3       =  241
-" dark4       =  243
-" dark4_256   =  243
+" dark0_hard     = 234
+" dark0          = 235
+" dark0_soft     = 236
+" dark1          = 237
+" dark2          = 239
+" dark3          = 241
+" dark4          = 243
+" dark4_256      = 243
+"
+" gray_245       = 245
+" gray_244       = 244
 
-" gray_245    =  245
-" gray_244    =  244
-
-" light0_hard =  230
-" light0      =  229
-" light0_soft =  228
-" light1      =  223
-" light2      =  250
-" light3      =  248
-" light4      =  246
-" light4_256  =  246
+" light0_hard    = 230
+" light0         = 229
+" light0_soft    = 228
+" light1         = 223
+" light2         = 250
+" light3         = 248
+" light4         = 246
 
 " bright_red     = 9
 " bright_green   = 10
@@ -40,6 +35,7 @@ syntax reset
 " bright_blue    = 12
 " bright_purple  = 13
 " bright_aqua    = 14
+" bright_white   = 15
 " bright_orange  = 208
 
 " neutral_red    = 1
@@ -48,8 +44,12 @@ syntax reset
 " neutral_blue   = 4
 " neutral_purple = 5
 " neutral_aqua   = 6
-" neutral_orange = 166"}}}
+" neutral_orange = 166
 
+let g:colors_name="termina"
+syntax reset
+
+" should change based on theme
 if !exists('g:indentLine_color_term')
   let g:indentLine_color_term = 239
 endif
@@ -73,7 +73,8 @@ hi  IncSearch                     ctermfg=166  ctermbg=235  cterm=inverse
 hi  Underlined                    ctermfg=4    ctermbg=none cterm=underline
 hi  StatusLine                    ctermfg=243  ctermbg=235  cterm=inverse
 hi  StatusLineNC                  ctermfg=239  ctermbg=246  cterm=inverse
-hi  VertSplit                     ctermfg=0  ctermbg=04
+hi  VertSplit                     ctermfg=0  ctermbg=0
+
 hi  WildMenu                      ctermfg=4    ctermbg=239  cterm=bold
 hi  ErrorMsg                      ctermfg=235  ctermbg=1    cterm=bold
 hi  NonText                       ctermfg=239  ctermbg=none
@@ -98,7 +99,7 @@ hi Special                        ctermfg=244  ctermbg=none cterm=bold
 hi Comment                        ctermfg=244  ctermbg=none
 hi Todo                           ctermfg=15   ctermbg=0
 hi Error                          ctermfg=235  ctermbg=1    cterm=reverse
-hi Statement                      ctermfg=4    ctermbg=none cterm=bold
+hi Statement                      ctermfg=4    ctermbg=none cterm=none
 hi Conditional                    ctermfg=5    ctermbg=none
 hi Repeat                         ctermfg=5    ctermbg=none
 hi Label                          ctermfg=4    ctermbg=none
@@ -125,6 +126,7 @@ hi Structure                      ctermfg=6    ctermbg=none
 hi Typedef                        ctermfg=3    ctermbg=none
 
 " Completion Menu
+" Change based on light theme
 hi Pmenu                          ctermfg=5  ctermbg=0
 hi PmenuSel                       ctermfg=0  ctermbg=5   cterm=bold
 hi PmenuSbar                      ctermfg=none ctermbg=239
@@ -165,16 +167,16 @@ hi BufTabLineHidden               ctermfg=4 ctermbg=none
 hi BufTabLineFill                 ctermfg=235 ctermbg=none
 
 " Python
-hi pythonBuiltin                  ctermfg=3 ctermbg=none
+hi pythonBuiltin                  ctermfg=11 ctermbg=none
 hi pythonBuiltinObj               ctermfg=11 ctermbg=none
 hi pythonBuiltinFunc              ctermfg=3   ctermbg=none
-hi pythonFunction                 ctermfg=5   ctermbg=none
+hi pythonFunction                 ctermfg=3   ctermbg=none
 hi pythonDecorator                ctermfg=1   ctermbg=none
 hi pythonInclude                  ctermfg=4   ctermbg=none
-hi pythonImport                   ctermfg=4   ctermbg=none
+hi pythonImport                   ctermfg=3   ctermbg=none
 hi pythonRun                      ctermfg=4   ctermbg=none
 hi pythonCoding                   ctermfg=4   ctermbg=none
-hi pythonOperator                 ctermfg=4   ctermbg=none
+hi pythonOperator                 ctermfg=3   ctermbg=none
 hi pythonExceptions               ctermfg=1   ctermbg=none
 hi pythonBoolean                  ctermfg=5   ctermbg=none
 hi pythonDot                      ctermfg=5 ctermbg=none
@@ -324,3 +326,17 @@ hi ALEError                       ctermfg=0 ctermbg=1
 
 " CleverF
 hi CleverFDefaultLabel            ctermfg=196 cterm=bold
+
+" should change based on bg 
+if &background ==# 'light'
+  hi VertSplit  ctermfg  = 15  ctermbg   = 15
+  hi Pmenu       ctermfg = 5  ctermbg   = 15
+  hi PmenuSel    ctermfg = 15  ctermbg  = 5   cterm = bold
+  hi PmenuSbar   ctermfg = none ctermbg = 239
+  hi PmenuThumb  ctermfg = 7 ctermbg    = 243
+endif
+
+if (exists('g:indentLine_color_term')) && (&background ==# 'light')
+  let g:indentLine_color_term = 253
+endif
+
