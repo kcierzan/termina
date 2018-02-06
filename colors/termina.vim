@@ -57,7 +57,7 @@ endif
 set fillchars=vert:\│
 
 " GUI
-hi CursorLine                     ctermfg=none ctermbg=none  cterm=underline
+hi CursorLine                     ctermfg=none ctermbg=0  cterm=none
 hi CursorColumn                   ctermfg=none ctermbg=237
 hi  TabLineFill                   ctermfg=236  ctermbg=0
 hi  TabLine                       ctermfg=236  ctermbg=4
@@ -65,7 +65,7 @@ hi  TabLineSel                    ctermfg=0    ctermbg=4    cterm=inverse,bold
 hi  MatchParen                    ctermfg=none ctermbg=241  cterm=underline
 hi  ColorColumn                   ctermfg=none ctermbg=0
 hi  Conceal                       ctermfg=4    ctermbg=none
-hi  CursorLineNr                  ctermfg=11   ctermbg=none cterm=underline
+hi  CursorLineNr                  ctermfg=11   ctermbg=0 cterm=none
 hi  Visual                        ctermfg=235  ctermbg=11
 hi  VisualNOS                     ctermfg=235  ctermbg=11
 hi  Search                        ctermfg=11   ctermbg=235  cterm=inverse
@@ -334,6 +334,8 @@ if &background ==# 'light'
   hi PmenuSel    ctermfg = 15  ctermbg  = 5   cterm = bold
   hi PmenuSbar   ctermfg = none ctermbg = 239
   hi PmenuThumb  ctermfg = 7 ctermbg    = 243
+  hi CursorLine                     ctermfg=none ctermbg=15  cterm=none
+  hi  CursorLineNr                  ctermfg=11   ctermbg=15 cterm=none
 endif
 
 if (exists('g:indentLine_color_term')) && (&background ==# 'light')
