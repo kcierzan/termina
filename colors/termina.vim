@@ -1,3 +1,4 @@
+"
 " -----------------------------------------------------------------------------
 " File: termina.vim
 " Description: A Vim/Neovim colorscheme for 256-color terminals
@@ -87,7 +88,7 @@ hi  Question                      ctermfg=5  ctermbg=none cterm=bold
 hi  WarningMsg                    ctermfg=166  ctermbg=none cterm=bold
 hi  LineNr                        ctermfg=243  ctermbg=none
 hi  SignColumn                    ctermfg=none ctermbg=237
-hi  Folded                        ctermfg=244  ctermbg=237
+hi  Folded                        ctermfg=244  ctermbg=0
 hi  FoldColumn                    ctermfg=244  ctermbg=237
 hi  Cursor                        ctermfg=235  ctermbg=166  cterm=inverse
 hi  vCursor                       ctermfg=none ctermbg=none cterm=inverse
@@ -329,13 +330,14 @@ hi CleverFDefaultLabel            ctermfg=196 cterm=bold
 
 " should change based on bg 
 if &background ==# 'light'
-  hi VertSplit  ctermfg  = 15  ctermbg   = 15
-  hi Pmenu       ctermfg = 5  ctermbg   = 15
-  hi PmenuSel    ctermfg = 15  ctermbg  = 5   cterm = bold
-  hi PmenuSbar   ctermfg = none ctermbg = 239
-  hi PmenuThumb  ctermfg = 7 ctermbg    = 243
-  hi CursorLine                     ctermfg=none ctermbg=15  cterm=none
-  hi  CursorLineNr                  ctermfg=11   ctermbg=15 cterm=none
+  hi VertSplit    ctermfg = 15   ctermbg = 15
+  hi Pmenu        ctermfg = 5    ctermbg = 15
+  hi PmenuSel     ctermfg = 15   ctermbg = 5   cterm = bold
+  hi PmenuSbar    ctermfg = none ctermbg = 239
+  hi PmenuThumb   ctermfg = 7    ctermbg = 243
+  hi CursorLine   ctermfg = none ctermbg = 15  cterm = none
+  hi CursorLineNr ctermfg = 11   ctermbg = 15  cterm = none
+  hi Folded       ctermfg = 244  ctermbg = 15
 endif
 
 if (exists('g:indentLine_color_term')) && (&background ==# 'light')

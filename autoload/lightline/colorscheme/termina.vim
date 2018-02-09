@@ -82,10 +82,10 @@ endif
 
 let s:p                 = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}
 
-let s:p.normal.left     = [ [ s:blue, s:dark2 ], [ s:black, s:dark3 ], [ s:black, s:dark_red ], [ s:magenta, s:black ] ]
-let s:p.insert.left     = [ [ s:green, s:dark2 ], [ s:black, s:dark3 ], [ s:black, s:dark_red ], [ s:magenta, s:black ] ]
-let s:p.visual.left     = [ [ s:magenta, s:dark2 ], [ s:black, s:dark3 ], [ s:black, s:dark_red ], [ s:magenta, s:black ] ]
-let s:p.replace.left    = [ [ s:red, s:dark2 ], [ s:black, s:dark3 ], [ s:black, s:dark_red ], [ s:magenta, s:black ] ]
+let s:p.normal.left     = [ [ s:black, s:blue ], [ s:black, s:dark3 ], [ s:black, s:dark_red ], [ s:magenta, s:black ] ]
+let s:p.insert.left     = [ [ s:black, s:green ], [ s:black, s:dark3 ], [ s:black, s:dark_red ], [ s:magenta, s:black ] ]
+let s:p.visual.left     = [ [ s:black, s:magenta ], [ s:black, s:dark3 ], [ s:black, s:dark_red ], [ s:magenta, s:black ] ]
+let s:p.replace.left    = [ [ s:black, s:red ], [ s:black, s:dark3 ], [ s:black, s:dark_red ], [ s:magenta, s:black ] ]
 let s:p.inactive.left   = [ [ s:black, s:black ], [ s:black, s:dark3 ], [ s:dark_red, s:dark1 ], [ s:magenta, s:black ] ]
 
 let s:p.normal.right    = [ [ s:black, s:dark2 ], [ s:black, s:dark3 ] ]
