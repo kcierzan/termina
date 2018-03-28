@@ -69,7 +69,7 @@ hi  Conceal                       ctermfg=4    ctermbg=none
 hi  CursorLineNr                  ctermfg=11   ctermbg=0 cterm=none
 hi  Visual                        ctermfg=235  ctermbg=11
 hi  VisualNOS                     ctermfg=235  ctermbg=11
-hi  Search                        ctermfg=11   ctermbg=235  cterm=inverse
+hi  Search                        ctermfg=15   ctermbg=1
 hi  IncSearch                     ctermfg=166  ctermbg=235  cterm=inverse
 hi  Underlined                    ctermfg=4    ctermbg=none cterm=underline
 hi  StatusLine                    ctermfg=243  ctermbg=235  cterm=inverse
@@ -224,7 +224,7 @@ hi markdownUrl                    ctermfg=5   ctermbg=none
 hi markdownUrlTitleDelimiter      ctermfg=2   ctermbg=none
 
 " Javascript
-hi javaScriptBraces               ctermfg=5 
+hi javaScriptBraces               ctermfg=5
 hi javaScriptFunction             ctermfg=13
 hi javaScriptIdentifier           ctermfg=13
 hi javaScriptMember               ctermfg=4
@@ -234,81 +234,81 @@ hi javaScriptParens               ctermfg=2
 
 
 " Yet Another Javascript Syntax
-hi javascriptImport               ctermfg=6
-hi javascriptExport               ctermfg=6
-hi javascriptClassKeyword         ctermfg=6
-hi javascriptClassExtends         ctermfg=5
-hi javascriptDefault              ctermfg=6
+hi! javascriptImport               ctermfg=6
+hi! javascriptExport               ctermfg=6
+hi! javascriptClassKeyword         ctermfg=6
+hi! javascriptClassExtends         ctermfg=5
+hi! javascriptDefault              ctermfg=6
 
-hi javascriptClassName            ctermfg=3
-hi javascriptClassSuperName       ctermfg=3
-hi javascriptGlobal               ctermfg=3
+hi! javascriptClassName            ctermfg=3
+hi! javascriptClassSuperName       ctermfg=3
+hi! javascriptGlobal               ctermfg=3
 
-hi javascriptEndColons            ctermfg=223
-hi javascriptFuncArg              ctermfg=13
-hi javascriptGlobalMethod         ctermfg=13
-hi javascriptNodeGlobal           ctermfg=2
+hi! javascriptEndColons            ctermfg=223
+hi! javascriptFuncArg              ctermfg=13
+hi! javascriptGlobalMethod         ctermfg=13
+hi! javascriptNodeGlobal           ctermfg=2
 
-hi javascriptVariable             ctermfg=4
-hi javascriptIdentifier           ctermfg=5
-hi javascriptClassSuper           ctermfg=6
-hi javascriptVariable             ctermfg=4
+hi! javascriptVariable             ctermfg=4
+hi! javascriptIdentifier           ctermfg=5
+hi! javascriptClassSuper           ctermfg=6
+hi! javascriptVariable             ctermfg=4
 
-hi javascriptFuncKeyword          ctermfg=4
-hi javascriptAsyncFunc            ctermfg=6
-hi javascriptClassStatic          ctermfg=166
+hi! javascriptFuncKeyword          ctermfg=4
+hi! javascriptAsyncFunc            ctermfg=6
+hi! javascriptClassStatic          ctermfg=166
 
-hi javascriptOperator             ctermfg=1
-hi javascriptForOperator          ctermfg=4
-hi javascriptYield                ctermfg=1
-hi javascriptExceptions           ctermfg=1
-hi javascriptMessage              ctermfg=1
+hi! javascriptOperator             ctermfg=1
+hi! javascriptForOperator          ctermfg=4
+hi! javascriptYield                ctermfg=1
+hi! javascriptExceptions           ctermfg=1
+hi! javascriptMessage              ctermfg=1
 
-hi javascriptTemplateSB           ctermfg=9
-hi javascriptTemplateSubstitution ctermfg=223
+hi! javascriptTemplateSB           ctermfg=9
+hi! javascriptTemplateSubstitution ctermfg=223
 
-hi javascriptLabel                ctermfg=4
-hi javascriptObjectLabel          ctermfg=4
-hi javascriptPropertyName         ctermfg=4
-hi javascriptLabel                ctermfg=13
-hi javascriptObjectLabel          ctermfg=13
-hi javascriptPropertyName         ctermfg=13
-hi javaScriptRequire              ctermfg=6
+hi! javascriptLabel                ctermfg=4
+hi! javascriptObjectLabel          ctermfg=4
+hi! javascriptPropertyName         ctermfg=4
+hi! javascriptLabel                ctermfg=13
+hi! javascriptObjectLabel          ctermfg=13
+hi! javascriptPropertyName         ctermfg=13
+hi! javaScriptRequire              ctermfg=6
 
-hi javascriptLogicSymbols         ctermfg=1
-hi javascriptArrowFunc            ctermfg=2
+hi! javascriptLogicSymbols         ctermfg=1
+hi! javascriptArrowFunc            ctermfg=2
 
-hi javascriptDocParamName         ctermfg=2
-hi javascriptDocTags              ctermfg=246
-hi javascriptDocNotation          ctermfg=5
-hi javascriptDocParamType         ctermfg=246
-hi javascriptDocNamedParamType    ctermfg=246
+hi! javascriptDocParamName         ctermfg=2
+hi! javascriptDocTags              ctermfg=246
+hi! javascriptDocNotation          ctermfg=5
+hi! javascriptDocParamType         ctermfg=246
+hi! javascriptDocNamedParamType    ctermfg=246
 
-hi jsArrowFunction ctermfg=5
-hi jsClassKeyword ctermfg=5
-hi jsClassMethodType ctermfg=5
-hi jsDocParam ctermfg=4
-hi jsDocTags ctermfg=5
-hi jsExport ctermfg=5
-hi jsExportDefault ctermfg=5
-hi jsExtendsKeyword ctermfg=5
-hi jsFrom ctermfg=5
-hi jsFuncCall ctermfg=4
-hi jsFunction ctermfg=5
-hi jsGenerator ctermfg=3
-hi jsGlobalObjects ctermfg=3
-hi jsImport ctermfg=5
-hi jsModuleAs ctermfg=5
-hi jsModuleWords ctermfg=5
-hi jsModules ctermfg=5
-hi jsNull ctermfg=11
-hi jsOperator ctermfg=5
-hi jsStorageClass ctermfg=5
-hi jsSuper ctermfg=1
-hi jsTemplateBraces ctermfg=9
-hi jsTemplateVar ctermfg=2
-hi jsThis ctermfg=1
-hi jsUndefined ctermfg=11
+hi! jsArrowFunction ctermfg=5
+hi! jsClassKeyword ctermfg=5
+hi! jsClassMethodType ctermfg=5
+hi! jsDocParam ctermfg=4
+hi! jsDocTags ctermfg=5
+hi! jsExport ctermfg=5
+hi! jsExportDefault ctermfg=5
+hi! jsExtendsKeyword ctermfg=5
+hi! jsFrom ctermfg=5
+hi! jsFuncCall ctermfg=4
+hi! jsFunction ctermfg=5
+hi! jsGenerator ctermfg=3
+hi! jsGlobalObjects ctermfg=3
+hi! jsImport ctermfg=5
+hi! jsModuleAs ctermfg=5
+hi! jsModuleWords ctermfg=5
+hi! jsModules ctermfg=5
+hi! jsNull ctermfg=11
+hi! jsOperator ctermfg=5
+hi! jsStorageClass ctermfg=5
+hi! jsSuper ctermfg=1
+hi! jsTemplateBraces ctermfg=9
+hi! jsTemplateVar ctermfg=2
+hi! jsThis ctermfg=1
+hi! jsUndefined ctermfg=11
 
 hi htmlTitle          ctermfg=223
 hi htmlArg            ctermfg=11
@@ -328,7 +328,7 @@ hi ALEError                       ctermfg=0 ctermbg=1
 " CleverF
 hi CleverFDefaultLabel            ctermfg=196 cterm=bold
 
-" should change based on bg 
+" should change based on bg
 if &background ==# 'light'
   hi VertSplit    ctermfg = 15   ctermbg = 15
   hi Pmenu        ctermfg = 5    ctermbg = 15
