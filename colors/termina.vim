@@ -69,7 +69,7 @@ hi  Conceal                       ctermfg=4    ctermbg=none
 hi  CursorLineNr                  ctermfg=11   ctermbg=0 cterm=none
 hi  Visual                        ctermfg=235  ctermbg=11
 hi  VisualNOS                     ctermfg=235  ctermbg=11
-hi  Search                        ctermfg=15   ctermbg=1
+hi  Search                        ctermfg=0   ctermbg=3 cterm=underline
 hi  IncSearch                     ctermfg=166  ctermbg=235  cterm=inverse
 hi  Underlined                    ctermfg=4    ctermbg=none cterm=underline
 hi  StatusLine                    ctermfg=243  ctermbg=235  cterm=inverse
@@ -109,7 +109,7 @@ hi Keyword                        ctermfg=5    ctermbg=none
 hi Normal                         ctermfg=none ctermbg=none
 hi Operator                       ctermfg=none ctermbg=none
 hi Identifier                     ctermfg=4    ctermbg=none
-hi Function                       ctermfg=3    ctermbg=none cterm=bold
+hi Function                       ctermfg=5    ctermbg=none cterm=bold
 hi PreProc                        ctermfg=6    ctermbg=none
 hi Include                        ctermfg=6    ctermbg=none
 hi Define                         ctermfg=6    ctermbg=none
@@ -118,13 +118,13 @@ hi PreCondit                      ctermfg=6    ctermbg=none
 hi Constant                       ctermfg=5    ctermbg=none
 hi Character                      ctermfg=5    ctermbg=none
 hi Boolean                        ctermfg=5    ctermbg=none
-hi Number                         ctermfg=3      ctermbg=none
+hi Number                         ctermfg=11      ctermbg=none
 hi Float                          ctermfg=5    ctermbg=none
 hi String                         ctermfg=2    ctermbg=none
-hi Type                           ctermfg=3    ctermbg=none
+hi Type                           ctermfg=5    ctermbg=none
 hi StorageClass                   ctermfg=166  ctermbg=none
 hi Structure                      ctermfg=6    ctermbg=none
-hi Typedef                        ctermfg=3    ctermbg=none
+hi Typedef                        ctermfg=10    ctermbg=none
 
 " Completion Menu
 " Change based on light theme
@@ -171,13 +171,13 @@ hi BufTabLineFill                 ctermfg=235 ctermbg=none
 hi pythonBuiltin                  ctermfg=11 ctermbg=none
 hi pythonBuiltinObj               ctermfg=11 ctermbg=none
 hi pythonBuiltinFunc              ctermfg=3   ctermbg=none
-hi pythonFunction                 ctermfg=3   ctermbg=none
+hi pythonFunction                 ctermfg=5   ctermbg=none
 hi pythonDecorator                ctermfg=1   ctermbg=none
 hi pythonInclude                  ctermfg=4   ctermbg=none
-hi pythonImport                   ctermfg=3   ctermbg=none
+hi pythonImport                   ctermfg=1   ctermbg=none
 hi pythonRun                      ctermfg=4   ctermbg=none
 hi pythonCoding                   ctermfg=4   ctermbg=none
-hi pythonOperator                 ctermfg=3   ctermbg=none
+hi pythonOperator                 ctermfg=1   ctermbg=none
 hi pythonExceptions               ctermfg=1   ctermbg=none
 hi pythonBoolean                  ctermfg=5   ctermbg=none
 hi pythonDot                      ctermfg=5 ctermbg=none
@@ -201,10 +201,10 @@ hi vimContinue                    ctermfg=248 ctermbg=none
 " Markdown
 hi markdownH1                     ctermfg=2 ctermbg=none cterm=bold
 hi markdownH2                     ctermfg=2 ctermbg=none cterm=bold
-hi markdownH3                     ctermfg=3 ctermbg=none cterm=bold
-hi markdownH4                     ctermfg=3 ctermbg=none cterm=bold
-hi markdownH5                     ctermfg=3 ctermbg=none
-hi markdownH6                     ctermfg=3 ctermbg=none
+hi markdownH3                     ctermfg=5 ctermbg=none cterm=bold
+hi markdownH4                     ctermfg=5 ctermbg=none cterm=bold
+hi markdownH5                     ctermfg=5 ctermbg=none
+hi markdownH6                     ctermfg=5 ctermbg=none
 hi markdownCode                   ctermfg=6 ctermbg=none
 hi markdownCodeBlock              ctermfg=6 ctermbg=none
 hi markdownCodeDelimiter          ctermfg=6 ctermbg=none
@@ -240,8 +240,8 @@ hi! javascriptClassKeyword         ctermfg=6
 hi! javascriptClassExtends         ctermfg=5
 hi! javascriptDefault              ctermfg=6
 
-hi! javascriptClassName            ctermfg=3
-hi! javascriptClassSuperName       ctermfg=3
+hi! javascriptClassName            ctermfg=4
+hi! javascriptClassSuperName       ctermfg=4
 hi! javascriptGlobal               ctermfg=3
 
 hi! javascriptEndColons            ctermfg=223
@@ -323,7 +323,8 @@ hi htmlTagName        ctermfg=1
 " ALE
 hi ALEErrorSign                   ctermfg=1
 hi ALEWarningSign                 ctermfg=3
-hi ALEError                       ctermfg=0 ctermbg=1
+hi ALEError                       ctermbg=0
+hi ALEWarning                     ctermbg=0
 
 " CleverF
 hi CleverFDefaultLabel            ctermfg=196 cterm=bold
