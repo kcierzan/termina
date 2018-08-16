@@ -69,7 +69,7 @@ hi  Conceal                       ctermfg=4    ctermbg=none
 hi  CursorLineNr                  ctermfg=11   ctermbg=0 cterm=none
 hi  Visual                        ctermfg=235  ctermbg=11
 hi  VisualNOS                     ctermfg=235  ctermbg=11
-hi  Search                        ctermfg=0   ctermbg=3 cterm=underline
+hi  Search                        ctermfg=166   ctermbg=238 cterm=underline
 hi  IncSearch                     ctermfg=166  ctermbg=235  cterm=inverse
 hi  Underlined                    ctermfg=4    ctermbg=none cterm=underline
 hi  StatusLine                    ctermfg=243  ctermbg=235  cterm=inverse
@@ -310,14 +310,14 @@ hi! jsTemplateVar ctermfg=2
 hi! jsThis ctermfg=1
 hi! jsUndefined ctermfg=11
 
-hi htmlTitle          ctermfg=223
+hi htmlTitle          ctermfg=6
 hi htmlArg            ctermfg=11
-hi htmlEndTag         ctermfg=223
-hi htmlH1             ctermfg=223
+hi htmlEndTag         ctermfg=6
+hi htmlH1             ctermfg=4
 hi htmlLink           ctermfg=5
 hi htmlSpecialChar    ctermfg=11
 hi htmlSpecialTagName ctermfg=1
-hi htmlTag            ctermfg=223
+hi htmlTag            ctermfg=5
 hi htmlTagName        ctermfg=1
 
 " ALE
