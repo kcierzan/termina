@@ -67,8 +67,8 @@ hi  MatchParen                    ctermfg=none ctermbg=241  cterm=underline
 hi  ColorColumn                   ctermfg=none ctermbg=0
 hi  Conceal                       ctermfg=4    ctermbg=none
 hi  CursorLineNr                  ctermfg=11   ctermbg=0 cterm=none
-hi  Visual                        ctermfg=235  ctermbg=11
-hi  VisualNOS                     ctermfg=235  ctermbg=11
+hi  Visual                        ctermfg=none  ctermbg=238
+hi  VisualNOS                     ctermfg=none  ctermbg=238
 hi  Search                        ctermfg=166   ctermbg=238 cterm=underline
 hi  IncSearch                     ctermfg=166  ctermbg=235  cterm=inverse
 hi  Underlined                    ctermfg=4    ctermbg=none cterm=underline
